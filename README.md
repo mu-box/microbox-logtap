@@ -21,9 +21,9 @@ This example will create a logtap that accepts udp syslog packets and stores the
 package main
 
 import (
-  "github.com/nanobox-io/nanobox-logtap"
-  "github.com/nanobox-io/nanobox-logtap/drain"
-  "github.com/nanobox-io/nanobox-logtap/collector"
+  "github.com/mu-box/microbox-logtap"
+  "github.com/mu-box/microbox-logtap/drain"
+  "github.com/mu-box/microbox-logtap/collector"
   "os"
   "os/signal"
 )
@@ -31,7 +31,7 @@ import (
 func main(){
   logTap := logtap.New(nil)
   defer logTap.Close()
-  
+
   fatal, err := os.Create("/tmp/fatal.log")
   if err != nil {
     panic(err)

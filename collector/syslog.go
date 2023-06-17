@@ -1,9 +1,3 @@
-// Copyright (c) 2015 Pagoda Box Inc
-//
-// This Source Code Form is subject to the terms of the Mozilla Public License, v.
-// 2.0. If a copy of the MPL was not distributed with this file, You can obtain one
-// at http://mozilla.org/MPL/2.0/.
-//
 package collector
 
 import (
@@ -11,7 +5,7 @@ import (
 	"github.com/jeromer/syslogparser"
 	"github.com/jeromer/syslogparser/rfc3164"
 	"github.com/jeromer/syslogparser/rfc5424"
-	"github.com/nanobox-io/nanobox-logtap"
+	"github.com/mu-box/microbox-logtap"
 	"io"
 	"net"
 	"strings"
@@ -24,7 +18,7 @@ type (
 	}
 )
 
-//Map syslog levels to logging levels (FYI, they don't really match well)
+// Map syslog levels to logging levels (FYI, they don't really match well)
 var adjust = []int{
 	5, // Alert         -> FATAL
 	5, // Critical      -> FATAL

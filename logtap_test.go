@@ -1,9 +1,3 @@
-// Copyright (c) 2015 Pagoda Box Inc
-//
-// This Source Code Form is subject to the terms of the Mozilla Public License, v.
-// 2.0. If a copy of the MPL was not distributed with this file, You can obtain one
-// at http://mozilla.org/MPL/2.0/.
-//
 package logtap_test
 
 import (
@@ -12,11 +6,11 @@ import (
 	"fmt"
 	"github.com/boltdb/bolt"
 	"github.com/jcelliott/lumber"
-	"github.com/nanobox-io/nanobox-logtap"
-	"github.com/nanobox-io/nanobox-logtap/api"
-	"github.com/nanobox-io/nanobox-logtap/archive"
-	"github.com/nanobox-io/nanobox-logtap/collector"
-	"github.com/nanobox-io/nanobox-logtap/drain"
+	"github.com/mu-box/microbox-logtap"
+	"github.com/mu-box/microbox-logtap/api"
+	"github.com/mu-box/microbox-logtap/archive"
+	"github.com/mu-box/microbox-logtap/collector"
+	"github.com/mu-box/microbox-logtap/drain"
 	"io/ioutil"
 	"net"
 	"net/http"
